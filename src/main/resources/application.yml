@@ -1,0 +1,13 @@
+server:
+  port: 8761
+eureka:
+  client:
+    registerWithEureka: false
+    fetchRegistry: false
+spring:
+  cloud:
+    config:
+      server:
+         git:
+           uri: file:///D:/Java tutorials/config-files
+           clone-on-start: true
